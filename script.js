@@ -162,10 +162,10 @@ function sendEmails(formData) {
 
   // Enviar el correo al remitente (informándole que su mensaje fue enviado)
   const sendToSender = emailjs.send('service_604rk54', 'template_j2wgpsq', {
-    from_name: 'Facundo Sosa - Web Developer & Designer',
+    from_name: formData.name,
     from_email: 'facundososadev@gmail.com',
     to_email: formData.email, // El correo del remitente
-    subject: 'Mensaje recibido', // Asunto del correo
+    subject: '¡Mensaje recibido!', // Asunto del correo
     message: formData.message, // Mensaje que se le enviará al remitente
   })
 
@@ -191,9 +191,9 @@ function validateForm() {
     function (event) {
       event.preventDefault()
       event.stopPropagation()
-      formSubmitBtn.style.display = 'none'
-      loader.style.display = 'block'
       if (form.checkValidity() && messageTextarea.value.length <= 255) {
+        formSubmitBtn.style.display = 'none'
+        loader.style.display = 'block'
         const formData = {
           name: form.querySelector('input[id="name"]').value,
           email: form.querySelector('input[id="email"]').value,
