@@ -290,3 +290,49 @@ function updateThemeToggleButton(theme) {
 //         "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\")"
 //       )
 // }
+
+// Cerrar el menú cuando se hace clic fuera de él
+const navbarToggler = document.querySelector('.navbar-toggler')
+const navbarCollapse = document.querySelector('.navbar-collapse')
+document.addEventListener('click', function (e) {
+  if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+    navbarCollapse.classList.remove('show')
+  }
+})
+
+// Resaltar la sección activa y cerrar el menú al hacer clic en un enlace
+const navLinks = document.querySelectorAll('.nav-link')
+navLinks.forEach((link) => {
+  link.addEventListener('click', function () {
+    // Eliminar la clase 'active' de todos los enlaces
+    navLinks.forEach((navLink) => navLink.classList.remove('active'))
+    // Añadir la clase 'active' al enlace clickeado
+    this.classList.add('active')
+    // Cerrar el menú si está abierto
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show')
+    }
+  })
+})
+
+const sections = document.querySelectorAll('section')
+window.addEventListener('scroll', () => {
+  let currentSection = ''
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120 // Ajuste por el offset de la navbar
+    const sectionHeight = section.clientHeight
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      currentSection = section.getAttribute('id')
+    }
+  })
+
+  navLinks.forEach((link) => {
+    link.classList.remove('active')
+    if (link.getAttribute('href').substring(1) === currentSection) {
+      link.classList.add('active')
+    }
+  })
+})

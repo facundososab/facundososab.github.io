@@ -19,6 +19,10 @@
   --background-color-rgb: 17, 24, 39;
 }
 
+html {
+  scroll-padding-top: 70px;
+}
+
 [data-theme='light'] {
   --primary-color: var(--light-primary-color);
   --secondary-color: var(--light-secondary-color);
@@ -145,6 +149,10 @@ h3 {
 }
 
 .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.active {
   color: var(--primary-color) !important;
 }
 
