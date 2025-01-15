@@ -148,17 +148,28 @@ function loadSkills() {
   })
 }
 
-emailjs.init('SQwjMcWHR-RWQZs0O') // Initialize emailjs with the user id
+emailjs.init('SQwjMcWHR-RWQZs0O') // Inicializar EmailJS
 
 function sendEmails(formData) {
-  // Send the email to me
-  return emailjs.send('service_604rk54', 'template_hsaguau', {
+  // Enviar el correo a mi
+  const sendToYou = emailjs.send('service_604rk54', 'template_hsaguau', {
     from_name: formData.name,
     from_email: formData.email,
     message: formData.message,
     to_email: 'facundososadev@gmail.com',
-    subject: 'Facundo Sosa - Web Developer & Designer',
+    subject: 'Mensaje desde portfolio',
   })
+
+  // Enviar el correo al remitente (informándole que su mensaje fue enviado)
+  const sendToSender = emailjs.send('service_604rk54', 'template_j2wgpsq', {
+    from_name: 'Facundo Sosa - Web Developer & Designer',
+    from_email: 'facundososadev@gmail.com',
+    to_email: formData.email, // El correo del remitente
+    subject: 'Mensaje recibido', // Asunto del correo
+    message: formData.message, // Mensaje que se le enviará al remitente
+  })
+
+  return Promise.all([sendToYou, sendToSender])
 }
 
 function validateForm() {
@@ -234,4 +245,48 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProjects()
   loadSkills()
   validateForm()
+
+  const savedTheme = localStorage.getItem('theme') || 'dark'
+  setTheme(savedTheme)
+  updateThemeToggleButton(savedTheme)
+
+  const themeToggle = document.getElementById('theme-toggle')
+  themeToggle.addEventListener('click', toggleTheme)
 })
+
+// Theme toggle functionality
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme)
+  document.body.setAttribute('data-theme', theme)
+  localStorage.setItem('theme', theme)
+}
+
+function toggleTheme() {
+  const currentTheme =
+    document.documentElement.getAttribute('data-theme') || 'dark'
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+  setTheme(newTheme)
+  updateThemeToggleButton(newTheme)
+  updateMenuToggleButton(newTheme)
+}
+
+function updateThemeToggleButton(theme) {
+  const toggleButton = document.getElementById('theme-toggle')
+  toggleButton.innerHTML =
+    theme === 'dark'
+      ? '<i class="bi bi-moon-fill"></i>'
+      : '<i class="bi bi-sun-fill"></i>'
+}
+
+// function updateMenuToggleButton(theme) {
+//   const menuToggleButton = document.querySelector('.navbar-toggler')
+//   theme === 'dark'
+//     ? menuToggleButton.style.setProperty(
+//         '--bs-navbar-toggler-icon-bg',
+//         "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\")"
+//       )
+//     : menuToggleButton.style.setProperty(
+//         '--bs-navbar-toggler-icon-bg',
+//         "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\")"
+//       )
+// }

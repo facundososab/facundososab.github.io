@@ -1,4 +1,5 @@
 :root {
+  /* Dark mode colors (default) */
   --primary-color: #3b82f6;
   --secondary-color: #d1d5db;
   --background-color: #111827;
@@ -6,6 +7,41 @@
   --text-color-muted: #9ca3af;
   --text-color-accent: #3b82f6;
   --text-color-inverted: #1e1e2f;
+
+  /* Light mode colors */
+  --light-primary-color: #2563eb;
+  --light-secondary-color: #6b7280;
+  --light-background-color: #f3f4f6;
+  --light-text-color: #1f2937;
+  --light-text-color-muted: #4b5563;
+  --light-text-color-accent: #2563eb;
+  --light-text-color-inverted: #f3f4f6;
+  --background-color-rgb: 17, 24, 39;
+}
+
+[data-theme='light'] {
+  --primary-color: var(--light-primary-color);
+  --secondary-color: var(--light-secondary-color);
+  --background-color: var(--light-background-color);
+  --text-color: var(--light-text-color);
+  --text-color-muted: var(--light-text-color-muted);
+  --text-color-accent: var(--light-text-color-accent);
+  --text-color-inverted: var(--light-text-color-inverted);
+  --background-color-rgb: 243, 244, 246;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  color: var(--primary-color);
 }
 
 /* Definición de fuentes */
@@ -23,13 +59,16 @@
   font-style: normal;
 }
 
+/* Transition for smooth theme change */
 body {
-  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Raleway', sans-serif; /* Added font-family */
   background-color: var(--background-color);
   color: var(--text-color);
   padding-top: 56px;
   line-height: 1.6;
   font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -68,7 +107,29 @@ h3 {
 
 .navbar {
   background-color: var(--background-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.3s ease-out;
+}
+
+.navbar .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2859, 130, 246, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  opacity: 0.75;
+}
+
+.navbar .navbar-toggler[aria-expanded='true'] {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6 L 24 24 M 6 24 L 24 6'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler[aria-expanded='true']:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2859, 130, 246, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6 L 24 24 M 6 24 L 24 6'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar-brand img {
@@ -106,6 +167,19 @@ h3 {
 
 .bg-light {
   background-color: var(--background-color) !important;
+}
+
+.decoration-border-top {
+  border-top: 2px solid var(--primary-color);
+  width: 10rem;
+  padding: 0;
+}
+
+.decoration-border-bottom {
+  position: absolute;
+  border-top: 2px solid var(--primary-color);
+  width: 10rem;
+  right: 0;
 }
 
 .social-links a {
@@ -284,30 +358,6 @@ footer {
   background-color: var(--background-color);
   color: var(--text-color-muted);
   font-size: 0.875rem;
-}
-
-section::before,
-section::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background: linear-gradient(
-    to bottom,
-    rgba(17, 24, 39, 0),
-    rgba(17, 24, 39, 1)
-  );
-  pointer-events: none;
-}
-
-section::before {
-  top: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(17, 24, 39, 1),
-    rgba(17, 24, 39, 0)
-  );
 }
 
 section::after {
