@@ -40,6 +40,7 @@ const skills = [
   { name: 'Git', logo: 'git.svg' },
   { name: 'Bootstrap', logo: 'bootstrap.svg' },
   { name: 'PHP', logo: 'php.svg' },
+  { name: 'Python', logo: 'python.svg' },
   { name: 'Docker', logo: 'docker.svg' },
 ]
 
