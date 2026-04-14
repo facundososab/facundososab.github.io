@@ -1,0 +1,254 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Facundo Sosa Systems Analyst" [ref=e6] [cursor=pointer]:
+        - /url: "#hero"
+        - generic [ref=e7]: FS
+        - generic [ref=e8]:
+          - generic [ref=e9]: Facundo Sosa
+          - generic [ref=e10]: Systems Analyst
+      - generic [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "01 About" [ref=e15] [cursor=pointer]:
+              - /url: "#about"
+              - generic [ref=e16]: "01"
+              - generic [ref=e17]: About
+          - listitem [ref=e18]:
+            - link "02 Projects" [ref=e19] [cursor=pointer]:
+              - /url: "#projects"
+              - generic [ref=e20]: "02"
+              - generic [ref=e21]: Projects
+          - listitem [ref=e22]:
+            - link "03 Skills" [ref=e23] [cursor=pointer]:
+              - /url: "#skills"
+              - generic [ref=e24]: "03"
+              - generic [ref=e25]: Skills
+          - listitem [ref=e26]:
+            - link "04 Contact" [ref=e27] [cursor=pointer]:
+              - /url: "#contact"
+              - generic [ref=e28]: "04"
+              - generic [ref=e29]: Contact
+        - button "Switch to dark mode" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◑
+          - generic [ref=e32]: Dark
+  - main [ref=e33]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: Systems Analyst • Systems Engineering Student
+        - heading "Building software with clear structure, useful depth, and long-term intent." [level=1] [ref=e38]
+        - paragraph [ref=e39]: I work on digital products from requirements to implementation, with a strong focus on business logic, architecture, and reliable delivery.
+        - generic [ref=e40]:
+          - link "LinkedIn" [ref=e41] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/facundo-sosa-bianciotto-3a0656216/
+            - generic [ref=e42]: 
+            - generic [ref=e43]: LinkedIn
+          - link "GitHub" [ref=e44] [cursor=pointer]:
+            - /url: https://github.com/facundososab
+            - generic [ref=e45]: 
+            - generic [ref=e46]: GitHub
+          - link "Start a conversation" [ref=e47] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [ref=e48]: Start a conversation
+      - complementary "Profile summary" [ref=e49]:
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Current Focus
+          - paragraph [ref=e52]: Working as a Systems Analyst while finishing a Systems Engineering degree, with particular interest in complex products and maintainable system design.
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: What I Bring
+          - list [ref=e55]:
+            - listitem [ref=e56]: Requirements analysis with business context
+            - listitem [ref=e57]: Clean architecture for maintainable systems
+            - listitem [ref=e58]: End-to-end delivery across backend and frontend
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: About
+        - heading "Systems thinking before visual noise." [level=2] [ref=e63]
+      - generic [ref=e64]:
+        - article [ref=e65]:
+          - paragraph [ref=e66]: I currently work as a Systems Analyst and I am in my final year of a Systems Engineering degree. I am passionate about technology, especially its ability to create innovative solutions that generate real value and solve real-world problems.
+          - paragraph [ref=e67]: My focus is on designing and developing robust, scalable systems, applying software engineering principles and best practices such as Clean Architecture. I aim to build solutions that remain clear, decoupled, and maintainable as they evolve.
+          - paragraph [ref=e68]: "I enjoy working end-to-end: understanding the business context, defining the architecture, modeling data, and implementing the logic that makes the system reliable in real-world use."
+        - complementary [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: Approach
+            - list [ref=e72]:
+              - listitem [ref=e73]: Translate business requirements into technical clarity
+              - listitem [ref=e74]: Keep architecture aligned with growth and maintainability
+              - listitem [ref=e75]: Prioritize efficient systems over decorative complexity
+          - generic [ref=e76]:
+            - paragraph [ref=e77]: Best Fit
+            - list "Collaboration areas" [ref=e78]:
+              - listitem [ref=e79]: Internal platforms
+              - listitem [ref=e80]: Operational systems
+              - listitem [ref=e81]: Process optimization
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - paragraph [ref=e85]: Projects
+        - heading "Selected work with a product and architecture mindset." [level=2] [ref=e86]
+      - generic [ref=e87]:
+        - article [ref=e88]:
+          - img "Management System / Platform preview" [ref=e90]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: Project 1
+              - link "Repository" [ref=e94] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+            - heading "Management System / Platform" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Application designed to solve a specific business problem, improving efficiency and user experience.
+            - paragraph [ref=e97]:
+              - generic [ref=e98]: What I did
+              - text: Designed the system architecture, developed the backend, modeled entities, and implemented business logic.
+            - list "Management System / Platform technologies" [ref=e99]:
+              - listitem [ref=e100]: react
+              - listitem [ref=e101]: typescript
+              - listitem [ref=e102]: nodejs
+              - listitem [ref=e103]: express
+              - listitem [ref=e104]: mongodb
+              - listitem [ref=e105]: mysql
+            - generic [ref=e106]:
+              - button "Open case study" [ref=e107] [cursor=pointer]
+              - link "View on GitHub" [ref=e108] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+        - article [ref=e109]:
+          - img "[Project Name] preview" [ref=e111]
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]: Project 2
+              - link "Repository" [ref=e115] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+            - heading "[Project Name]" [level=3] [ref=e116]
+            - paragraph [ref=e117]: Solution focused on solving a specific problem and improving a key process or experience.
+            - paragraph [ref=e118]:
+              - generic [ref=e119]: What I did
+              - text: Requirements analysis, solution design, and full system implementation.
+            - list "[Project Name] technologies" [ref=e120]:
+              - listitem [ref=e121]: typescript
+              - listitem [ref=e122]: javascript
+              - listitem [ref=e123]: react
+              - listitem [ref=e124]: nodejs
+              - listitem [ref=e125]: express
+            - generic [ref=e126]:
+              - button "Open case study" [ref=e127] [cursor=pointer]
+              - link "View on GitHub" [ref=e128] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+        - article [ref=e129]:
+          - img "[Project Name] preview" [ref=e131]
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]: Project 3
+              - link "Repository" [ref=e135] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+            - heading "[Project Name]" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Development of a system focused on solving a defined problem or achieving a specific goal.
+            - paragraph [ref=e138]:
+              - generic [ref=e139]: What I did
+              - text: Fullstack development, architecture definition, and data handling.
+            - list "[Project Name] technologies" [ref=e140]:
+              - listitem [ref=e141]: javascript
+              - listitem [ref=e142]: php
+              - listitem [ref=e143]: mysql
+              - listitem [ref=e144]: docker
+              - listitem [ref=e145]: bootstrap
+            - generic [ref=e146]:
+              - button "Open case study" [ref=e147] [cursor=pointer]
+              - link "View on GitHub" [ref=e148] [cursor=pointer]:
+                - /url: https://github.com/facundososab
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - paragraph [ref=e152]: Capabilities
+        - heading "Core strengths supported by a practical technical stack." [level=2] [ref=e153]
+      - generic [ref=e154]:
+        - article [ref=e155]:
+          - heading "Core Skills" [level=3] [ref=e156]
+          - list [ref=e157]:
+            - listitem [ref=e158]: Business requirements analysis
+            - listitem [ref=e159]: System design and scalable architectures
+            - listitem [ref=e160]: Data modeling
+            - listitem [ref=e161]: Design patterns
+            - listitem [ref=e162]: Clean Architecture
+            - listitem [ref=e163]: Complex problem solving
+            - listitem [ref=e164]: Backend development (Node.js, Express)
+            - listitem [ref=e165]: Frontend development (React)
+            - listitem [ref=e166]: API design and implementation (REST)
+            - listitem [ref=e167]: Relational databases (SQL)
+        - article [ref=e168]:
+          - heading "Technology Stack" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]: TypeScript, JavaScript
+            - listitem [ref=e172]: React, Node.js, Express
+            - listitem [ref=e173]: SQL, PHP
+            - listitem [ref=e174]: Docker, Git
+            - listitem [ref=e175]: HTML, CSS, Bootstrap
+            - listitem [ref=e176]: Python
+      - generic "Technology logos" [ref=e177]:
+        - article [ref=e178]:
+          - img [ref=e179]
+          - generic [ref=e180]: HTML
+        - article [ref=e181]:
+          - img [ref=e182]
+          - generic [ref=e183]: CSS
+        - article [ref=e184]:
+          - img [ref=e185]
+          - generic [ref=e186]: JavaScript
+        - article [ref=e187]:
+          - img [ref=e188]
+          - generic [ref=e189]: TypeScript
+        - article [ref=e190]:
+          - img [ref=e191]
+          - generic [ref=e192]: React
+        - article [ref=e193]:
+          - img [ref=e194]
+          - generic [ref=e195]: Node.js
+        - article [ref=e196]:
+          - img [ref=e197]
+          - generic [ref=e198]: Express
+        - article [ref=e199]:
+          - img [ref=e200]
+          - generic [ref=e201]: MongoDB
+        - article [ref=e202]:
+          - img [ref=e203]
+          - generic [ref=e204]: MySQL
+        - article [ref=e205]:
+          - img [ref=e206]
+          - generic [ref=e207]: Git
+        - article [ref=e208]:
+          - img [ref=e209]
+          - generic [ref=e210]: Bootstrap
+        - article [ref=e211]:
+          - img [ref=e212]
+          - generic [ref=e213]: PHP
+        - article [ref=e214]:
+          - img [ref=e215]
+          - generic [ref=e216]: Python
+        - article [ref=e217]:
+          - img [ref=e218]
+          - generic [ref=e219]: Docker
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - paragraph [ref=e223]: Contact
+        - heading "Interested in serious systems work and clear product thinking." [level=2] [ref=e224]
+      - generic [ref=e225]:
+        - generic [ref=e226]:
+          - paragraph [ref=e227]: I am interested in projects where architecture matters, requirements are real, and the solution needs to work beyond a prototype.
+          - link "facundososadev@gmail.com" [ref=e228] [cursor=pointer]:
+            - /url: mailto:facundososadev@gmail.com
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - generic [ref=e231]: Name
+            - textbox "Name" [ref=e232]:
+              - /placeholder: Your name…
+          - generic [ref=e233]:
+            - generic [ref=e234]: Email
+            - textbox "Email" [ref=e235]:
+              - /placeholder: name@company.com…
+          - generic [ref=e236]:
+            - generic [ref=e237]: Message
+            - textbox "Message" [ref=e238]:
+              - /placeholder: Tell me about the product, the problem, or the role…
+            - generic [ref=e240]: 0 / 255
+          - button "Send message" [ref=e242] [cursor=pointer]
+  - contentinfo [ref=e243]:
+    - paragraph [ref=e245]: © 2026 Facundo Sosa. Built with a clear, minimal system.

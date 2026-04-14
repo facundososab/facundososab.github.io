@@ -60,7 +60,7 @@ function createProjectCard(project) {
             ${project.technologies
               .map(
                 (tech) =>
-                  `<img src="img/skills-logos/${tech}.svg" alt="${tech} logo" class="skill-logo" />`
+                  `<img src="img/skills-logos/${tech}.svg" alt="${tech} logo" class="skill-logo" />`,
               )
               .join('')}
           </div>
@@ -93,14 +93,14 @@ function createProjectModal(project) {
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="${project.title}ModalLabel">${
-    project.title
-  }</h5>
+            project.title
+          }</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <img src="${project.homepage_image}" alt="${
-    project.title
-  } Homepage" class="img-fluid w-100">
+            project.title
+          } Homepage" class="img-fluid w-100">
           <p class="mt-3">${project.description}</p>
           <div class="project-technologies mt-3">
             <h6>Technologies:</h6>
@@ -108,7 +108,7 @@ function createProjectModal(project) {
               ${project.technologies
                 .map(
                   (tech) =>
-                    `<img src="img/skills-logos/${tech}.svg" alt="${tech} logo" class="skill-logo" />`
+                    `<img src="img/skills-logos/${tech}.svg" alt="${tech} logo" class="skill-logo" />`,
                 )
                 .join('')}
             </div>
@@ -157,16 +157,16 @@ function sendEmails(formData) {
     from_name: formData.name,
     from_email: formData.email,
     message: formData.message,
-    to_email: 'facundososadev@gmail.com',
+    to_email: 'facundososabianciotto@gmail.com',
     subject: 'Mensaje desde portfolio',
   })
 
   // Enviar el correo al remitente (informándole que su mensaje fue enviado)
   const sendToSender = emailjs.send('service_604rk54', 'template_j2wgpsq', {
     from_name: formData.name,
-    from_email: 'facundososadev@gmail.com',
+    from_email: 'facundososabianciotto@gmail.com',
     to_email: formData.email, // El correo del remitente
-    subject: '¡Mensaje recibido!', // Asunto del correo
+    subject: 'Message received!',
     message: formData.message, // Mensaje que se le enviará al remitente
   })
 
@@ -229,7 +229,7 @@ function validateForm() {
       } else {
         if (messageTextarea.value.length > 255) {
           messageTextarea.setCustomValidity(
-            'Message must not exceed 255 characters'
+            'Message must not exceed 255 characters',
           )
         } else {
           messageTextarea.setCustomValidity('')
@@ -238,7 +238,7 @@ function validateForm() {
 
       form.classList.add('was-validated')
     },
-    false
+    false,
   )
 }
 

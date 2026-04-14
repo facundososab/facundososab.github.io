@@ -5,6 +5,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles.css'
 import App from './App'
 
+if (!customElements.get('lottie-player')) {
+  import('@lottiefiles/lottie-player')
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

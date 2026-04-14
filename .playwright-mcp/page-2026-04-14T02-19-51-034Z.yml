@@ -1,0 +1,208 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Facundo Sosa Systems Analyst" [ref=e6] [cursor=pointer]:
+        - /url: "#hero"
+        - generic [ref=e7]: FS
+        - generic [ref=e8]:
+          - generic [ref=e9]: Facundo Sosa
+          - generic [ref=e10]: Systems Analyst
+      - generic [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "01 About" [ref=e15] [cursor=pointer]:
+              - /url: "#about"
+              - generic [ref=e16]: "01"
+              - generic [ref=e17]: About
+          - listitem [ref=e18]:
+            - link "02 Projects" [ref=e19] [cursor=pointer]:
+              - /url: "#projects"
+              - generic [ref=e20]: "02"
+              - generic [ref=e21]: Projects
+          - listitem [ref=e22]:
+            - link "03 Skills" [ref=e23] [cursor=pointer]:
+              - /url: "#skills"
+              - generic [ref=e24]: "03"
+              - generic [ref=e25]: Skills
+          - listitem [ref=e26]:
+            - link "04 Contact" [ref=e27] [cursor=pointer]:
+              - /url: "#contact"
+              - generic [ref=e28]: "04"
+              - generic [ref=e29]: Contact
+        - button "Switch to dark mode" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◑
+          - generic [ref=e32]: Dark
+  - main [ref=e33]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - heading "Facundo Sosa" [level=1] [ref=e37]
+        - paragraph [ref=e38]: Systems Analyst • Systems Engineering Student
+        - paragraph [ref=e39]: I work on digital products from requirements to implementation, with a strong focus on business logic, architecture, and reliable delivery.
+        - generic [ref=e40]:
+          - link "LinkedIn" [ref=e41] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/facundo-sosa-bianciotto-3a0656216/
+            - generic [ref=e42]: 
+            - generic [ref=e43]: LinkedIn
+          - link "GitHub" [ref=e44] [cursor=pointer]:
+            - /url: https://github.com/facundososab
+            - generic [ref=e45]: 
+            - generic [ref=e46]: GitHub
+          - link "Start a conversation" [ref=e47] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [ref=e48]: Start a conversation
+      - complementary "Profile summary" [ref=e49]:
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Current Focus
+          - paragraph [ref=e52]: Working as a Systems Analyst while finishing a Systems Engineering degree, with particular interest in complex products and maintainable system design.
+    - generic [ref=e54]:
+      - heading "about" [level=2] [ref=e56]
+      - article [ref=e57]:
+        - paragraph [ref=e58]: I currently work as a Systems Analyst and I am in my final year of a Systems Engineering degree. I am passionate about technology, especially its ability to create innovative solutions that generate real value and solve real-world problems.
+        - paragraph [ref=e59]: My focus is on designing and developing robust, scalable systems, applying software engineering principles and best practices such as Clean Architecture. I aim to build solutions that remain clear, decoupled, and maintainable as they evolve.
+        - paragraph [ref=e60]: "I enjoy working end-to-end: understanding the business context, defining the architecture, modeling data, and implementing the logic that makes the system reliable in real-world use."
+    - generic [ref=e62]:
+      - heading "projects" [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - article [ref=e66]:
+          - img "Management System / Platform preview" [ref=e68]
+          - generic [ref=e69]:
+            - generic [ref=e71]: Project 1
+            - heading "Management System / Platform" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Application designed to solve a specific business problem, improving efficiency and user experience.
+            - list "Management System / Platform technologies" [ref=e74]:
+              - listitem [ref=e75]:
+                - img "React" [ref=e76]
+              - listitem [ref=e77]:
+                - img "TypeScript" [ref=e78]
+              - listitem [ref=e79]:
+                - img "Node.js" [ref=e80]
+              - listitem [ref=e81]:
+                - img "Express" [ref=e82]
+              - listitem [ref=e83]:
+                - img "MongoDB" [ref=e84]
+              - listitem [ref=e85]:
+                - img "MySQL" [ref=e86]
+            - link "View on GitHub" [ref=e88] [cursor=pointer]:
+              - /url: https://github.com/facundososab
+              - generic [ref=e89]: 
+              - generic [ref=e90]: View on GitHub
+        - article [ref=e91]:
+          - img "[Project Name] preview" [ref=e93]
+          - generic [ref=e94]:
+            - generic [ref=e96]: Project 2
+            - heading "[Project Name]" [level=3] [ref=e97]
+            - paragraph [ref=e98]: Solution focused on solving a specific problem and improving a key process or experience.
+            - list "[Project Name] technologies" [ref=e99]:
+              - listitem [ref=e100]:
+                - img "TypeScript" [ref=e101]
+              - listitem [ref=e102]:
+                - img "JavaScript" [ref=e103]
+              - listitem [ref=e104]:
+                - img "React" [ref=e105]
+              - listitem [ref=e106]:
+                - img "Node.js" [ref=e107]
+              - listitem [ref=e108]:
+                - img "Express" [ref=e109]
+            - link "View on GitHub" [ref=e111] [cursor=pointer]:
+              - /url: https://github.com/facundososab
+              - generic [ref=e112]: 
+              - generic [ref=e113]: View on GitHub
+        - article [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e117]: Project 3
+            - heading "Drone Delivery System" [level=3] [ref=e118]
+            - paragraph [ref=e119]: System for managing order deliveries with drones, focused on dispatch flow, operational control, and delivery tracking.
+            - list "Drone Delivery System technologies" [ref=e120]:
+              - listitem [ref=e121]:
+                - img "JavaScript" [ref=e122]
+              - listitem [ref=e123]:
+                - img "PHP" [ref=e124]
+              - listitem [ref=e125]:
+                - img "MySQL" [ref=e126]
+              - listitem [ref=e127]:
+                - img "Docker" [ref=e128]
+              - listitem [ref=e129]:
+                - img "Bootstrap" [ref=e130]
+            - link "View on GitHub" [ref=e132] [cursor=pointer]:
+              - /url: https://github.com/facundososab
+              - generic [ref=e133]: 
+              - generic [ref=e134]: View on GitHub
+    - generic [ref=e136]:
+      - heading "skills" [level=2] [ref=e138]
+      - article [ref=e140]:
+        - heading "Core Skills" [level=3] [ref=e141]
+        - list [ref=e142]:
+          - listitem [ref=e143]: Business requirements analysis
+          - listitem [ref=e144]: System design and scalable architectures
+          - listitem [ref=e145]: Data modeling
+          - listitem [ref=e146]: Design patterns
+          - listitem [ref=e147]: Clean Architecture
+          - listitem [ref=e148]: Complex problem solving
+          - listitem [ref=e149]: Backend development (Node.js, Express)
+          - listitem [ref=e150]: Frontend development (React)
+          - listitem [ref=e151]: API design and implementation (REST)
+          - listitem [ref=e152]: Relational databases (SQL)
+      - generic "Technology logos" [ref=e153]:
+        - article [ref=e154]:
+          - img "HTML" [ref=e155]
+          - generic [ref=e156]: HTML
+        - article [ref=e157]:
+          - img "CSS" [ref=e158]
+          - generic [ref=e159]: CSS
+        - article [ref=e160]:
+          - img "JavaScript" [ref=e161]
+          - generic [ref=e162]: JavaScript
+        - article [ref=e163]:
+          - img "TypeScript" [ref=e164]
+          - generic [ref=e165]: TypeScript
+        - article [ref=e166]:
+          - img "React" [ref=e167]
+          - generic [ref=e168]: React
+        - article [ref=e169]:
+          - img "Node.js" [ref=e170]
+          - generic [ref=e171]: Node.js
+        - article [ref=e172]:
+          - img "Express" [ref=e173]
+          - generic [ref=e174]: Express
+        - article [ref=e175]:
+          - img "MongoDB" [ref=e176]
+          - generic [ref=e177]: MongoDB
+        - article [ref=e178]:
+          - img "MySQL" [ref=e179]
+          - generic [ref=e180]: MySQL
+        - article [ref=e181]:
+          - img "Git" [ref=e182]
+          - generic [ref=e183]: Git
+        - article [ref=e184]:
+          - img "Bootstrap" [ref=e185]
+          - generic [ref=e186]: Bootstrap
+        - article [ref=e187]:
+          - img "PHP" [ref=e188]
+          - generic [ref=e189]: PHP
+        - article [ref=e190]:
+          - img "Python" [ref=e191]
+          - generic [ref=e192]: Python
+        - article [ref=e193]:
+          - img "Docker" [ref=e194]
+          - generic [ref=e195]: Docker
+    - generic [ref=e197]:
+      - heading "contact" [level=2] [ref=e199]
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]: Name
+          - textbox "Name" [ref=e203]:
+            - /placeholder: Your name…
+        - generic [ref=e204]:
+          - generic [ref=e205]: Email
+          - textbox "Email" [ref=e206]:
+            - /placeholder: name@company.com…
+        - generic [ref=e207]:
+          - generic [ref=e208]: Message
+          - textbox "Message" [ref=e209]:
+            - /placeholder: Tell me about the product, the problem, or the role…
+          - generic [ref=e211]: 0 / 255
+        - button "Send message" [ref=e213] [cursor=pointer]
+  - contentinfo [ref=e214]:
+    - paragraph [ref=e216]: © 2026 Facundo Sosa. Built with a clear, minimal system.
