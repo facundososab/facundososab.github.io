@@ -4,8 +4,8 @@ const projects = [
     description:
       'Veterinary management system with a login feature that customizes views, functionalities, and permissions based on user roles.',
     technologies: ['html', 'css', 'bootstrap', 'php', 'mysql'],
-    image: 'img/proyects/veterinaria-sananton/miniatura_sananton.png',
-    homepage_image: 'img/proyects/veterinaria-sananton/homepage_sananton.png',
+    image: 'img/projects/veterinaria-sananton/miniatura_sananton.png',
+    homepage_image: 'img/projects/veterinaria-sananton/homepage_sananton.png',
   },
   {
     title: 'ItinerarIA',
@@ -22,8 +22,8 @@ const projects = [
       'mongodb',
       'docker',
     ],
-    image: 'img/proyects/itineraria/miniatura_itineraria.png',
-    homepage_image: 'img/proyects/itineraria/homepage_itineraria.png',
+    image: 'img/projects/itineraria/miniatura_itineraria.png',
+    homepage_image: 'img/projects/itineraria/homepage_itineraria.png',
   },
 ]
 

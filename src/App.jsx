@@ -266,7 +266,7 @@ function App() {
             onClick={() => handleNavClick('#hero')}
           >
             <img
-              src="img/logo.svg"
+              src="/img/logo.svg"
               alt="Facundo Sosa logo"
               className="brand-mark__logo"
               width="44"
@@ -486,7 +486,7 @@ function App() {
                         return (
                           <li key={`${project.id}-${techKey}`}>
                             <img
-                              src={`img/skills-logos/${technology.logo}`}
+                              src={technology.logo}
                               alt={technology.name}
                               title={technology.name}
                               width="32"
@@ -539,7 +539,7 @@ function App() {
                   {skills.map((skill) => (
                     <article className="skill-token" key={skill.id}>
                       <img
-                        src={`img/skills-logos/${skill.logo}`}
+                        src={skill.logo}
                         alt={skill.name}
                         className="skill-token__logo"
                         width="56"

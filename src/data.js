@@ -1,18 +1,36 @@
+import bootstrapLogo from '../img/skills-logos/bootstrap.svg'
+import cssLogo from '../img/skills-logos/css.svg'
+import dockerLogo from '../img/skills-logos/docker.svg'
+import expressLogo from '../img/skills-logos/express.svg'
+import gitLogo from '../img/skills-logos/git.svg'
+import htmlLogo from '../img/skills-logos/html.svg'
+import javascriptLogo from '../img/skills-logos/javascript.svg'
+import mongodbLogo from '../img/skills-logos/mongodb.svg'
+import mysqlLogo from '../img/skills-logos/mysql.svg'
+import nodejsLogo from '../img/skills-logos/nodejs.svg'
+import phpLogo from '../img/skills-logos/php.svg'
+import pythonLogo from '../img/skills-logos/python.svg'
+import reactLogo from '../img/skills-logos/react.svg'
+import typescriptLogo from '../img/skills-logos/typescript.svg'
+
+import itinerariaThumb from '../img/projects/itineraria/miniatura_itineraria.png'
+import veterinariaThumb from '../img/projects/veterinaria-sananton/miniatura_sananton.png'
+
 export const technologyCatalog = {
-  html: { name: 'HTML', logo: 'html.svg' },
-  css: { name: 'CSS', logo: 'css.svg' },
-  javascript: { name: 'JavaScript', logo: 'javascript.svg' },
-  typescript: { name: 'TypeScript', logo: 'typescript.svg' },
-  react: { name: 'React', logo: 'react.svg' },
-  nodejs: { name: 'Node.js', logo: 'nodejs.svg' },
-  express: { name: 'Express', logo: 'express.svg' },
-  mongodb: { name: 'MongoDB', logo: 'mongodb.svg' },
-  mysql: { name: 'MySQL', logo: 'mysql.svg' },
-  git: { name: 'Git', logo: 'git.svg' },
-  bootstrap: { name: 'Bootstrap', logo: 'bootstrap.svg' },
-  php: { name: 'PHP', logo: 'php.svg' },
-  python: { name: 'Python', logo: 'python.svg' },
-  docker: { name: 'Docker', logo: 'docker.svg' },
+  html: { name: 'HTML', logo: htmlLogo },
+  css: { name: 'CSS', logo: cssLogo },
+  javascript: { name: 'JavaScript', logo: javascriptLogo },
+  typescript: { name: 'TypeScript', logo: typescriptLogo },
+  react: { name: 'React', logo: reactLogo },
+  nodejs: { name: 'Node.js', logo: nodejsLogo },
+  express: { name: 'Express', logo: expressLogo },
+  mongodb: { name: 'MongoDB', logo: mongodbLogo },
+  mysql: { name: 'MySQL', logo: mysqlLogo },
+  git: { name: 'Git', logo: gitLogo },
+  bootstrap: { name: 'Bootstrap', logo: bootstrapLogo },
+  php: { name: 'PHP', logo: phpLogo },
+  python: { name: 'Python', logo: pythonLogo },
+  docker: { name: 'Docker', logo: dockerLogo },
 }
 
 export const projects = [
@@ -23,7 +41,7 @@ export const projects = [
     description:
       'Streamlines veterinary clinic operations by managing appointments, patients, and services in a centralized system.',
     technologies: ['php', 'mysql', 'html', 'css', 'bootstrap'],
-    image: 'img/proyects/veterinaria-sananton/miniatura_sananton.png',
+    image: veterinariaThumb,
     imageWidth: 3428,
     imageHeight: 1914,
     githubUrl: 'https://github.com/facundososab/VeterinariaSanAnton',
@@ -44,7 +62,7 @@ export const projects = [
       'css',
       'docker',
     ],
-    image: 'img/proyects/itineraria/miniatura_itineraria.png',
+    image: itinerariaThumb,
     imageWidth: 3428,
     imageHeight: 1914,
     githubUrl: 'https://github.com/TomasSanchezMachado/itinerarIA-Backend',
