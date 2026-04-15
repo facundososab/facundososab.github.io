@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { coreSkills, projects, skills, technologyCatalog } from './data'
+import brandLogo from '../img/logo.svg'
 
 const navItems = [
   { href: '#about', label: 'About me' },
@@ -266,7 +267,7 @@ function App() {
             onClick={() => handleNavClick('#hero')}
           >
             <img
-              src="/img/logo.svg"
+              src={brandLogo}
               alt="Facundo Sosa logo"
               className="brand-mark__logo"
               width="44"
