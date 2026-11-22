@@ -1,21 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Facundo Sosa Bianciotto | Systems Analyst & Engineering Student
-    </title>
+    <title>Facundo Sosa Bianciotto | Systems Analyst & Engineering Student</title>
     <meta
       name="description"
       content="Portfolio of Facundo Sosa, systems analyst and engineering student focused on architecture, business logic, and maintainable software."
     />
-    <meta name="theme-color" content="#f6f2ea" />
-    <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
+    <meta name="theme-color" content="#121212" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./img/memoticon-facundo-sosa.svg" />
     <meta
       name="google-site-verification"
       content="g2mvhWdUGVV8DxL6dU1hB6JWRs426i1RpwV2POVcp60"
     />
+    <script>
+      ;(() => {
+        try {
+          const saved = localStorage.getItem('theme')
+          const theme = saved === 'light' ? 'light' : 'dark'
+          document.documentElement.classList.toggle('dark', theme === 'dark')
+          document.documentElement.setAttribute('data-theme', theme)
+          document.documentElement.style.colorScheme = theme
+        } catch {
+          document.documentElement.classList.add('dark')
+          document.documentElement.setAttribute('data-theme', 'dark')
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
