@@ -99,12 +99,12 @@ export function Navbar({
             onThemeChange={onThemeChange}
             variant="circle"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--border-strong)] hover:text-[var(--ink-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-primary)]"
+            className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-[var(--ink-secondary)] transition-colors hover:text-[var(--ink-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-primary)]"
           />
 
           <button
             type="button"
-            className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--ink-primary)] transition-colors hover:border-[var(--border-strong)] md:hidden"
+            className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-[var(--ink-primary)] transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-primary)] md:hidden"
             aria-controls="mobile-nav"
             aria-expanded={menuOpen}
             aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}

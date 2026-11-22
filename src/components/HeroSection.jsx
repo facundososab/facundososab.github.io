@@ -97,7 +97,7 @@ export function HeroSection({ theme, onNavigate }) {
       id="hero"
       className="relative bg-[var(--bg-canvas)] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:min-h-[calc(100svh-1rem)] lg:flex lg:flex-col lg:justify-between"
     >
-      <div className="mx-auto my-auto grid w-full max-w-[1200px] grid-cols-1 items-center gap-10 px-6 lg:grid-cols-12 lg:gap-8">
+      <div className="mx-auto my-auto grid w-full max-w-[1200px] grid-cols-1 items-center gap-3 px-6 sm:gap-6 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
           <div className="mb-4 flex items-center gap-4">
             <a
@@ -160,7 +160,7 @@ export function HeroSection({ theme, onNavigate }) {
 
           <div
             className={cn(
-              'mt-9 transition-all delay-100 duration-500 ease-out',
+              'mt-6 transition-all delay-100 duration-500 ease-out sm:mt-9',
               typingDone
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-3 opacity-0',
@@ -193,9 +193,9 @@ export function HeroSection({ theme, onNavigate }) {
           </div>
         </div>
 
-        <div className="lg:col-span-5">
+        <div className="-mt-3 sm:mt-0 lg:col-span-5">
           <BlurFade delay={0.16} duration={0.65} offset={12}>
-            <div className="relative mx-auto aspect-square w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[480px]">
+            <div className="relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[480px]">
               <CrystalizedBall
                 color={isDark ? '#5ea2ff' : '#2563eb'}
                 theme={theme}
@@ -224,7 +224,7 @@ export function HeroSection({ theme, onNavigate }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex w-full max-w-[1200px] justify-center px-6 lg:mt-0">
+      <div className="mx-auto mt-4 flex w-full max-w-[1200px] justify-center px-6 lg:mt-0">
         <a
           href="#about"
           onClick={(e) => onNavigate(e, '#about')}
